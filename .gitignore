@@ -1,0 +1,19 @@
+target/
+
+### IntelliJ IDEA ###
+.idea/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# TestNG
+test-output/
+
+### Mac OS ###
+.DS_Store
