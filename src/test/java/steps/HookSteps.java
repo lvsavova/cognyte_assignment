@@ -6,10 +6,13 @@ import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import utils.FileUtilities;
 import utils.WebDriverHandler;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class HookSteps {
 
@@ -19,7 +22,7 @@ public class HookSteps {
     public static void setup() {
         try {
             FileUtilities.cleanDir(REPORT_DIR);
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println("Error cleaning directory: " + e.getMessage());
         }
     }

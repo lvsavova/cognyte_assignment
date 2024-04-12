@@ -88,7 +88,7 @@ public class CheckoutStepOnePage extends BasePage {
     }
 
     public String getErrorMsg() {
-        mediumWait.until(ExpectedConditions.visibilityOf(errorMsgContainer));
+        smallWait.until(ExpectedConditions.visibilityOf(errorMsgContainer));
         return errorMsgContainer.getText();
     }
 
